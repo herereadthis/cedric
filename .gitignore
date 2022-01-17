@@ -1,0 +1,9 @@
+.DS_Store
+
+dist
+dist-*
+
+cabal.project.local
+cabal.project.local~
+
+.stack-work/
