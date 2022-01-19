@@ -28,16 +28,10 @@ Parametric polymorphism: a function can handle values identically without depend
 
 ghci: where Am i? 
 
-```bash
-# where am i?
-Prelude> :! pwd
+## GHCI Commands
 
-# cd to directory
-Prelude> :cd PATH
+[ghci.md](https://github.com/herereadthis/cedric/blob/main/docs/ghci.md)
 
-# load file
-Prelude> :l src/foo.hs
-```
 
 
 Check the type of something
