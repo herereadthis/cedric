@@ -33,19 +33,13 @@ ghci: where Am i?
 [ghci.md](https://github.com/herereadthis/cedric/blob/main/docs/ghci.md)
 
 
+## Formatting
 
-Check the type of something
+* Layout based syntax: indentation location isn't important, as long all elements in the block start in the same column.
+  * In an `if` block, `then` and `else` must start on the same column
+  * In a `let` or `where` block, all local bindings must start on the same column
 
-```Haskell
-Prelude> :t 'a'
-```
 
-Everything has a type
-
-```Haskell
-import Data.char
-:t toUpper
-```
 
 Lists in Haskell are homogeneous: each list can handle elements of only a single type
 

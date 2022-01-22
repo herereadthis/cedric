@@ -33,3 +33,32 @@ beginning before the head of the list
 reverse2 list = if null list
                 then []
                 else reverse2 (tail list) +++ [head list]
+
+{- don't do this, it makes no sense -}
+maxmin1 list = if null (tail list)
+              then (head list, head list)
+              else ( if (head list) > fst (maxmin (tail list))
+                     then head list
+                     else fst (maxmin (tail list))
+                   , if (head list) < snd (maxmin (tail list))
+                     then head list
+                     else snd (maxmin (tail list))
+                   )
+
+{- 
+use local binding: give a name to an expression to be used in a larger one
+let binding: introduces bindings before main expressions, use with "in"
+where binding: bindings after the main expression
+
+Layout based syntax: indentation location isn't important, as long all elements
+in the block start in the same column.
+-}
+maxmin :: [Float] -> (Float, Float)
+maxmin list =   let h = head list
+                in if null (tail list)
+                    then (h, h)
+                    else ( if h > t_max then h else t_max
+                         , if h < t_min then h else t_min )
+                         where t = maxmin (tail list)
+                               t_max = fst t 
+                               t_min = snd t 
