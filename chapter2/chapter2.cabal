@@ -21,7 +21,8 @@ extra-source-files: CHANGELOG.md
 
 library
     exposed-modules:    MyLib, 
-                        Chapter2.SimpleFunctions
+                        Chapter2.SimpleFunctions,
+                        Chapter2.DataTypes
 
     -- Modules included in this library but not exported.
     -- other-modules:

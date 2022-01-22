@@ -40,6 +40,12 @@ ghci: where Am i?
   * In a `let` or `where` block, all local bindings must start on the same column
 
 
+## Data Types
+
+* THe most basic kind of data type is *algebraic data type* (ADT), which has
+  * a name for the type
+  * constructors (which may have arguments holding the values of the specified types) used for creating new values
+
 
 Lists in Haskell are homogeneous: each list can handle elements of only a single type
 
