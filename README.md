@@ -32,6 +32,10 @@ ghci: where Am i?
 
 [ghci.md](https://github.com/herereadthis/cedric/blob/main/docs/ghci.md)
 
+## Lists
+
+[lists.md](https://github.com/herereadthis/cedric/blob/main/docs/lists.md)
+
 
 ## Formatting
 
