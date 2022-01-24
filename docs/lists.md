@@ -51,3 +51,19 @@ take 4 (repeat 5)
 ```
 
 ## List Comprehensions
+
+```haskell
+-- double all numbers of a list from 1 to 5
+[x*2 | x <- [1..5]]
+-- [2,4,6,8,10] 
+
+-- predicates/filtering (with a comma). as before, but only where 2x is >= 6
+[x*2 | x <- [1..5], x*2 >= 6]
+-- [6,8,10]
+
+-- predicate - all numbers from 1 to 100 that are multiples of 7
+[x | x <- [1..100], x `mod` 7 == 0]
+-- same result
+[x*7 | x <- [1..100], x*7 <= 100]
+-- [7,14,21,28,35,42,49,56,63,70,77,84,91,98]
+```
